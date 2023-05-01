@@ -1,7 +1,8 @@
 # image-duplicates
-- utilize imagehash to compare images and move duplicates into a separate folder for review
+### utilize imagehash to compare images and move duplicates into a separate folder for review
 
-  - `os`, `sys`, `shutil`, `Image`, `imagehash`, and `filecmp` are Python libraries that are being imported for use in the script.
+- Libraries: `os`, `sys`, `shutil`, `Image`, `imagehash`, and `filecmp`
+
   - `get_file_hash` takes a file path and calculates the hash of that file.
   - `identify_duplicates` takes a folder path and identifies duplicate files in that folder based on their hashes. It creates a dictionary of file hashes and file paths and checks if the hash already exists in the dictionary. If it does, it adds the file path to a list of duplicates.
   - `move_duplicates_to_folder` takes a list of duplicate file paths and moves them to a new folder called "duplicates". If the file already exists in the "duplicates" folder, it appends a number to the end of the file name and tries again.
